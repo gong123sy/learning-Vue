@@ -6,5 +6,5 @@ import App from "./App.vue";
 new Vue({
   el: "#root",
   template: `<App></App>`,
-  components: { App }, //注册这一个组件就行了
+  components: { App }, // 注册这一个组件就行了
 });
