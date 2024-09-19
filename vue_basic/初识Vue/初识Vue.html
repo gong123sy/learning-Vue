@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+
+<!-- 1.想让Vue工作，就必须创建一个Vue实例，且要传入一个配置对象
+     2.root容器里的代码被称为代码模版
+     3.真实开发中只有一个Vue实例，并且配合组件一起使用
+     4.data里的数据可以直接通过{{xxx}}来绑定到模版里，xxx要写js表达式
+     5.data 中的数据发生改变，页面上的数据也会自动更新
+
+     注意区分 js表达式和js代码（语句）
+             js表达式：a,a+b,fn(1)
+             js代码（语句）：if(){}，for(){}
+  -->
+
+<body>
+    <!-- 准备好容器 -->
+    <div id="root">
+        <h1>{{message}}</h1>
+    </div>
+
+    <script type="text/javascript">
+        Vue.config.productionTip = false
+
+        //创建Vue实例，实例和容器一一对应
+        new Vue({
+            el: '#root',    //指定当前实例为哪个容器服务
+            data: {
+                message: 'hello Vue'
+            }
+        })
+    </script>
+    </script>
+</body>
+
+</html>
