@@ -1,15 +1,14 @@
-//该文件是整个项目的入口文件
+//07_src_TodoList案例
 
 //引入Vue
-import Vue from "vue";
-//引入App组件，它是所有组件的父组件
-import App from "./App.vue";
+import Vue from "vue"
+//引入App
+import App from "./App.vue"
 //关闭Vue的生产提示
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
-//创建Vue的实例对象
+//创建vm
 new Vue({
   el: "#app",
-  //将App组件渲染到页面上
   render: (h) => h(App),
-});
+})
